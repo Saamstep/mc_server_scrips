@@ -22,9 +22,9 @@ https://github.com/itzg/rcon-cli
  You may start adding code under the comment that says **Script starts here**
  
  ```
- discord() "Message" # Discord message via webhook url
+ discord "Message" # Discord message via webhook url
  
- rcon() Command # Just MC command (notice no quotes)
+ rcon Command # Just MC command (notice no quotes)
  
  broadcast "Message" # Discord & MC
  ```
