@@ -19,7 +19,7 @@ https://github.com/itzg/rcon-cli
  
  ### Usage
  
- You may start adding code under the comment that says [b]Script starts here[b]
+ You may start adding code under the comment that says **Script starts here**
  
  ```
  discord() "Message" # Discord message via webhook url
