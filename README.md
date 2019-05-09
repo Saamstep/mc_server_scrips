@@ -1,5 +1,5 @@
 ## Server scripts
-
+*Tested on MacOS Mojave 10.14.2*
 ### script.sh
 
 Requires permission. Use chmod or equivalent. 
