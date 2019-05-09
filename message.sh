@@ -1,5 +1,5 @@
 #!/bin/sh
-# ./panelcontrol.sh
+# ./message.sh
 
 ## Temp/Dev Variables
  ENDPOINT=
