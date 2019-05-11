@@ -1,5 +1,5 @@
 #!/bin/sh
-# ./message.sh
+# ./restart.sh
 
 ## Temp/Dev Variables
  ENDPOINT=
