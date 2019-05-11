@@ -1,12 +1,12 @@
 #!/bin/sh
-# ./message.sh
+# ./restart.sh
 
 ## Temp/Dev Variables
  ENDPOINT=
  PORT=
  RCON_DIR=
  RCON_PASS=
- URL=https://ptb.discordapp.com/api/webhooks/575831709086646293/D7ILlZc9MAmCoezcEEG0CX05Cr4Cby0mASthw-JS3dJuP94b2ab5mv79DXxDvPoa9T0g
+ URL=
 ##Panel Controller Vars
   SERVER_ID=
   CLIENT_ID=
