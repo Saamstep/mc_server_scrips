@@ -1,11 +1,12 @@
 ## Server scripts
 *Tested on MacOS Mojave 10.14.2*
-### message.sh
+### All scripts that use the rcon() function.
 
-Requires permission. Use chmod or equivalent. 
+- Requires permission. Use chmod or equivalent. 
 
-Requires rcon-cli
-https://github.com/itzg/rcon-cli
+- Requires [rcon-cli](https://github.com/itzg/rcon-cli)
+
+### restart.sh and start.sh requires [jq](https://stedolan.github.io/jq/)
 
 ### Vars
 
@@ -17,7 +18,16 @@ https://github.com/itzg/rcon-cli
  URL= # No quotes, webhook URL for Discord
  ```
  
- ### Usage
+### Panel Controller Vars
+```
+  SERVER_ID= # Server ID 
+  CLIENT_ID= # Client ID
+  SECRET= # Secret generated when remote connection info is provided
+  **DO NOT** modify the TOKEN variable.
+```
+  
+ 
+ ### Usage of the message.sh script.
  
  You may start adding code under the comment that says **Script starts here**
  
