@@ -1,15 +1,21 @@
 ## Server scripts
 *Tested on MacOS Mojave 10.14.2*
-### All scripts that use the rcon() function.
+
+## Dependencies/Requirements
+### All scripts 
 
 - Requires permission. Use chmod or equivalent. 
 
+### message.sh
+
 - Requires [rcon-cli](https://github.com/itzg/rcon-cli)
 
-### restart.sh and start.sh requires [jq](https://stedolan.github.io/jq/)
+### restart.sh and start.sh
+- Requires [jq](https://stedolan.github.io/jq/)
 
-### Vars
+## Vars
 
+### General
 ```
  ENDPOINT= # Include in quote, server IP (no port)
  PORT= # Inclulde in quote, MC RCON port
@@ -26,7 +32,7 @@
   **DO NOT** modify the TOKEN variable.
 ```
   
- 
+ ## How To:
  ### Usage of the message.sh script.
  
  You may start adding code under the comment that says **Script starts here**
@@ -39,3 +45,9 @@
  broadcast "Message" # Discord & MC
  ```
  
+ 
+ ### TODO
+- Backup script
+- test restart.sh and start.sh on actual server machine
+- think of more scripts...
+  - join my [Devcord](https://samstep.ga/devcord) (Dev-Discord) to suggest a script.
