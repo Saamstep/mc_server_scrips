@@ -1,14 +1,21 @@
 ## Server scripts
 *Tested on MacOS Mojave 10.14.2*
+
+## Dependencies/Requirements
+### All scripts 
+
+- Requires permission. Use chmod or equivalent. 
+
 ### message.sh
 
-Requires permission. Use chmod or equivalent. 
+- Requires [rcon-cli](https://github.com/itzg/rcon-cli)
 
-Requires rcon-cli
-https://github.com/itzg/rcon-cli
+### restart.sh and start.sh
+- Requires [jq](https://stedolan.github.io/jq/)
 
-### Vars
+## Vars
 
+### General
 ```
  ENDPOINT= # Include in quote, server IP (no port)
  PORT= # Inclulde in quote, MC RCON port
@@ -17,7 +24,16 @@ https://github.com/itzg/rcon-cli
  URL= # No quotes, webhook URL for Discord
  ```
  
- ### Usage
+### Panel Controller Vars
+```
+  SERVER_ID= # Server ID 
+  CLIENT_ID= # Client ID
+  SECRET= # Secret generated when remote connection info is provided
+  **DO NOT** modify the TOKEN variable.
+```
+  
+ ## How To:
+ ### Usage of the message.sh script.
  
  You may start adding code under the comment that says **Script starts here**
  
@@ -29,3 +45,9 @@ https://github.com/itzg/rcon-cli
  broadcast "Message" # Discord & MC
  ```
  
+ 
+ ### TODO
+- Backup script
+- test restart.sh and start.sh on actual server machine
+- think of more scripts...
+  - join my [Devcord](https://samstep.ga/devcord) (Dev-Discord) to suggest a script.
