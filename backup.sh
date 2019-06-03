@@ -49,13 +49,9 @@ broadcast "Server will be backing up in 1 minute"
 sleep 50
 broadcast "10 Seconds till backup..."
 sleep 5
-rcon kick @a [Console] Automatic Backup Occuring...
 rcon save-all
+rcon save-off
 sleep 2
-curl -X GET 'Content-type: application/json' -H 'Accept: application/json' -H "Authorization: Bearer ${TOKEN}" http://$ENDPOINT/daemon/server/$SERVER_ID/stop
-discord An automatic backup is taking place... This could take anytime between 2-5 minutes.
-
-sleep 1
 echo starting...
 if [ $VANILLA = 'true' ] 
 then
@@ -70,9 +66,8 @@ zip -r $BACKUP_PATH/$NAME/world_nether $SERVER_PATH/world_nether
 zip -r $BACKUP_PATH/$NAME/world_the_end $SERVER_PATH/world_the_end
 fi
 
-curl -X GET 'Content-type: application/json' -H 'Accept: application/json' -H "Authorization: Bearer ${TOKEN}" http://$ENDPOINT/daemon/server/$SERVER_ID/start
-
-
+rcon save-on
+broadcast Backup complete
 
 #End script
 exit
