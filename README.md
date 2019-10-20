@@ -50,4 +50,4 @@
 - Backup script
 - test restart.sh and start.sh on actual server machine
 - think of more scripts...
-  - join my [Devcord](https://samstep.ga/devcord) (Dev-Discord) to suggest a script.
+  - join my [Devcord](https://samstep.net/devcord) (Dev-Discord) to suggest a script.
